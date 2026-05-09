@@ -16,6 +16,8 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import '../css/watch-gallery.css';
 
+const ELECROW_ZSWATCH_DK_URL = 'https://www.elecrow.com/zswatch-development-kit.html';
+
 const images = [
   {
     original: StainlessWatchFrontWide,
@@ -105,10 +107,24 @@ function HomepageHeader() {
             
             <SubscriptionForm />
             
-            <div className="mb-2">
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mb-2">
               <Link to="/blog" className="font-medium transition-colors text-sm" style={{color: '#9EC8F6', textDecoration: 'none'}}>
                 Read the blog for latest info →
               </Link>
+              <a
+                href={ELECROW_ZSWATCH_DK_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium"
+                style={{
+                  backgroundColor: 'rgba(158, 200, 246, 0.08)',
+                  border: '1px solid rgba(158, 200, 246, 0.22)',
+                  color: '#9EC8F6',
+                  textDecoration: 'none'
+                }}
+              >
+                Buy ZSWatch DK at Elecrow ↗
+              </a>
             </div>
 
             <div className="mb-2" style={{color: '#64748b', fontSize: '0.8rem'}}>
